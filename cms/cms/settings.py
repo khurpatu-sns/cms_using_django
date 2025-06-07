@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'cms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '15daysdjango',
-        'HOST': 'localhost',
+        'NAME': 'railway',
+        'HOST': 'shinkansen.proxy.rlwy.net',
         'USER': 'root',
-        'PASSWORD':'',
-        'PORT': 3306,
+        'PASSWORD':'VBkDrnSKfFWcWhfahlKWLztfWnYFjpTh',
+        'PORT': 31609,
     }
 }
 
@@ -124,6 +124,9 @@ USE_TZ = True
 import os
 STATIC_URL = "static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+MEDIA_URL ="media/"
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 
 LOGIN_URL ="/blogs/login/"
 
